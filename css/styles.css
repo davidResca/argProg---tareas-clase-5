@@ -14,7 +14,6 @@ nav{
 
 
 .main{
-    height: 100vh;
     background-color: rgb(106, 218, 106);
 }
 
@@ -67,7 +66,6 @@ nav{
 
 /* Exclusivo Pagina ejercicio-3 */
 .main-videos{
-    height: 100vh;
     background: linear-gradient(342deg, rgba(91,195,118,1) 0%, rgba(80,108,142,1) 100%); 
 }
 .print{
