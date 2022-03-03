@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+nav{
+    filter: drop-shadow(20px 20px 10px rgba(0, 0, 0, 0.2));
+}
+
+
+.main{
+    height: 100vh;
+    background-color: rgb(106, 218, 106);
+}
+
+.main--title{
+    font-family: 'Roboto Serif', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: aliceblue;
+}
+
+.main--subtitle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    border: 1px solid green;
+    width: 310px;
+}
+
+.img-calc {
+    filter: drop-shadow(5px 5px 5px #222222);
+    -webkit-filter: drop-shadow(5px 5px 5px #222222);
+}
+
+
+/* Botón calcular */
+.calcular{    
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #333;
+    outline: none;
+    padding: 1%;
+    box-shadow: .3rem .3rem rgba(29, 119, 33, 0.65), 4px 4px 5px rgba(20, 24, 20, 0.65);
+}
+.calcular:hover{
+    filter: brightness(110%);
+}
+.calcular:active {
+    transform: translate(.3rem, .3rem);
+    box-shadow: 0 0.05rem rgba(29, 119, 33, 0.65);
+}
+
+
+/* Exclusivo Pagina ejercicio-2*/
+.img-castor{
+    transform: scaleX(-1);
+}
+
+
+/* Exclusivo Pagina ejercicio-3 */
+.main-videos{
+    height: 100vh;
+    background: linear-gradient(342deg, rgba(91,195,118,1) 0%, rgba(80,108,142,1) 100%); 
+}
+.print{
+    font-family: 'Roboto Serif', sans-serif;
+    font-size: 3rem;
+    padding: 5px;
+    text-shadow: 5px 5px 10px rgba(20, 24, 20, 0.65);
+}
+.main--par{
+    font-family: 'Roboto Serif', sans-serif;
+    text-align: center;
+    width: 80%;
+    padding: .5rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    text-shadow: 3px 3px 3px rgb(0, 0, 0, .2);
+}
+
+/* Exclusivo Pagina ejercicio-4 */
+
+.ej4--main{
+    height: 100%;
+    background: radial-gradient(circle, rgba(100,101,106,1) 27%, rgba(231,166,180,1) 100%);
+}
+
+.num--list{
+    width: 130px; 
+    overflow-x: hidden;
+    border: 3px solid black;
+}
+
+.numeros{
+    font-family: 'Roboto Serif', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    background: white;
+    padding: 0 3ch;
+    border-top: 3px solid black;
+}
+
+.numeros--impresos{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    padding: 0;
+    text-align: center;
+}
+/* Media Queries */
+
+@media screen and (min-width: 480px){
+    .main--title{
+        font-size: 3rem;     
+    }
+    .main--subtitle{
+        font-size: 1.2rem;
+        width: 80%;
+    }
+    .formulario{
+        width: 90%;
+    }
+    .calcular{
+        width: 50%;
+    }
+    
+}
+
+@media screen and (min-width: 574px){
+    .main--title{
+        font-size: 3.5rem;
+    }
+    .print{
+        font-family: 'Roboto Serif', sans-serif;
+        font-size: 2rem;
+        padding: 5px;
+        text-shadow: 5px 5px 10px rgba(20, 24, 20, 0.65);
+    }
+    .calcular{    
+        font-size: 1.2rem;
+        width: 200px;
+    }
+    h5{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .main--title{
+        font-size: 4rem;
+    }
+}
